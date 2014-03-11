@@ -2,7 +2,7 @@ gradrating
 ==========
 
 Yet Another Rating Directive
-This one - with gradiant
+This one - with gradient
 
  directive: &lt;gradrating&gt;<br>
                 <blockqoute>
