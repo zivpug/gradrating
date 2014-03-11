@@ -12,3 +12,5 @@ This one - with gradiant
             <li>rate-count: number of buttons (and max rate)<br></li>
             <li>rate-callback: function to be called upon the rating action</li>
             </ul>
+
+Working sample @ http://directivemaker.info/gradrating/
