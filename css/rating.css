@@ -1,0 +1,10 @@
+.rating {clear: both}
+.rating li {
+    outline: none;
+    list-style: none;
+    width:30px;
+    float: left;
+    transition: color 1s ease;
+    color: #3c3c3c;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="rating">
+<head>
+<meta charset="utf-8">
+
+  <!-- rating CSS -->
+  <link href="css/rating.css" type="text/css" rel="stylesheet">
+
+    <!-- font-awesome CDN.
+any icon font can be used, as long as it uses css class and <i> tag {or you can change it in the directive's template itself} -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <script src="bower_components/angular/angular.js"></script>
+
+  <!-- angularjs App file -->
+  <script src="js/setup.js"></script>
+  <!-- angularjs gradRating directive file -->
+  <script src="directive/gradRating.js"></script>
+
+
+  <div>
+    <div id="content" class="container" ng-controller="mainCtrl">
+        <h2>Yet another Rating directive</h2>
+        (this one - with gradients!)<br>
+        <br>
+        <br>
+        <blockqoute>
+
+            directive: &lt;gradrating&gt;<br>
+                <blockqoute>
+                options:
+                <ul>
+            <li>rate-icon-classes - array of classes to be used on the rating buttons<br></li>
+            <li>rate-count: number of buttons (and max rate)<br></li>
+            <li>rate-callback: function to be called upon the rating action</li>
+            </ul>
+                </blockqoute>
+
+    </blockqoute>
+      <div >
+          <blockquote>
+          <b>sample</b>
+          (using classes - 'fa', 'fa-apple', 'fa-2x' for font-awsome icon fonts)<br>
+        <div>
+            <gradrating rate-icon-classes="['fa', 'fa-apple', 'fa-2x']" rate-count="5" rate-callback="logRating(rate)" ></gradrating>
+              <span ng-show="vote">
+            Your vote: {{ vote }}
+        </span>
+        </div>
+              <br>
+
+          </blockquote>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
