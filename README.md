@@ -1,7 +1,7 @@
 gradrating
 ==========
 
-Yet Another Rating Directive
+Yet Another angularJs Rating Directive
 This one - with gradient
 
  directive: &lt;gradrating&gt;<br>
