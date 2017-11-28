@@ -2,15 +2,25 @@ gradrating
 ==========
 
 Yet Another angularJs Rating Directive
-This one - with gradient
+This one - with gradients!
 
- directive: &lt;gradrating&gt;<br>
-                <blockqoute>
-                options:
-                <ul>
-            <li>rate-icon-classes - array of classes to be used on the rating buttons<br></li>
-            <li>rate-count: number of buttons (and max rate)<br></li>
-            <li>rate-callback: function to be called upon the rating action</li>
-            </ul>
+usage:
+    <gradrating
+        rate-current=""
+        rate-icon-classes=""
+        rate-count=""
+        rate-raters=""
+        rate-callback=""
+    ></gradrating>
 
+parameters:
+
+    rateZCurrent: initial rate when loading.
+    rateRaters: Number. Number of raters so far.
+    rateIconClasses: Array. Classes to be used as rating stars (sample is useing Fontawesome classes).
+    rateCount: Number. The number of rating options (defaults to 5).
+    rateCallback: function name. Function to be called when rate icon is clicked.
+
+CSS
+    Include the rating.css file when needed for the basic styling classes.
 Working sample @ http://ziv-p.com/gradrating/
