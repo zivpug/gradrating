@@ -23,4 +23,6 @@ parameters:
 
 CSS
     Include the rating.css file when needed for the basic styling classes.
+
+
 Working sample @ http://ziv-p.com/gradrating/
