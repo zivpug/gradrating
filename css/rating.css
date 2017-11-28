@@ -1,10 +1,13 @@
-.rating {clear: both}
-.rating li {
+.rating  {
     outline: none;
-    list-style: none;
-    width:30px;
-    float: left;
+    margin: 0 3px;
     transition: color 1s ease;
-    color: #3c3c3c;
     cursor: pointer;
+    cursor: hand;
+    opacity: .6;
+}
+
+.rating:hover {
+    color: #cccccc;
+    opacity: 1;
 }

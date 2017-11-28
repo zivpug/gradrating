@@ -45,7 +45,13 @@ any icon font can be used, as long as it uses css class and <i> tag {or you can 
           <b>sample</b>
           (using classes - 'fa', 'fa-apple', 'fa-2x' for font-awsome icon fonts)<br>
         <div>
-            <gradrating rate-icon-classes="['fa', 'fa-apple', 'fa-2x']" rate-count="5" rate-callback="logRating(rate)" ></gradrating>
+            <gradrating
+                rate-current="2"
+                rate-raters="3"
+                rate-icon-classes="['fa', 'fa-apple', 'fa-2x']"
+                rate-count="5"
+                rate-callback="logRating(rate)"
+            ></gradrating>
               <span ng-show="vote">
             Your vote: {{ vote }}
         </span>

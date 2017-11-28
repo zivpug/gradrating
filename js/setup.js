@@ -1,7 +1,7 @@
-angular.module('rating', []);
+var app = angular.module('rating', []);
 
 
-angular.module('rating').controller('mainCtrl',function($scope){
+app.controller('mainCtrl',function($scope){
 
     $scope.vote = '';
 
